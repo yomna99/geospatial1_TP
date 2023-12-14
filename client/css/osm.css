@@ -1,0 +1,77 @@
+#map {
+    width: 100%;
+      height: calc(100% - 56px); /* Adjust based on the height of your navbar */
+      position: absolute;
+      right: 0;
+      top: 56px; /* Set to the height of the navbar */
+      bottom: 0;
+      overflow: hidden;
+      background-color: #E9E9E9;
+}
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar appears above the map */
+  }
+
+  /* Additional styling for the navbar */
+  nav.navbar .navbar-brand {
+    font-weight: bold;
+  }
+
+  nav.navbar .navbar-toggler-icon {
+    background-color: #333;
+  }
+
+  nav.navbar .navbar-nav .nav-item .btn {
+    margin: 0 5px;
+  }
+
+  nav.navbar .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  nav.navbar .btn-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
+
+  nav.navbar .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+
+  nav.navbar .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+
+  nav.navbar .btn:hover,
+  nav.navbar .btn:active {
+    opacity: 0.8;
+  }
+
+  nav.navbar .navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #scaleBarOptions {
+    display: none;
+  }
+
+  input[type=range] {
+    vertical-align: middle;
+  }
+
+  .ol-scale-bar-inverted .ol-scale-singlebar-even {
+    background-color: var(--ol-background-color);
+  }
+
+  .ol-scale-bar-inverted .ol-scale-singlebar-odd {
+    background-color: var(--ol-subtle-foreground-color);;
+  }

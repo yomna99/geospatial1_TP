@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Un squelette d'application OL</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- OpenLayers CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/osm.css" type="text/css" />
+    <link rel="stylesheet" href="css/osm_gs.css" type="text/css" />
+    <link rel="stylesheet" href="css/ol.css" type="text/css" />
+    <link rel="stylesheet" href="css/ol-layerswitcher.css" type="text/css" />
+    <script src="./resources/jquery.js"></script>
+    <script type="text/javascript" src="./resources/jquery-ui.js"></script>
+    <script type="text/javascript" src="./resources/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jquery-ui.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Autres styles de librairies -->
+    <!-- nos styles personnalisés-->
+    <style></style>
+  </head>
+  <body>
+    <!-- localisation icon  -->
+    <div id="location" class="marker">
+      <i class="fa fa-street-view fa-lg" style="color: rgb(0, 13, 252)"></i>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Formation SIG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Add your buttons inside the navbar -->
+            <li class="nav-item">
+              <button id="select" type="button" class="btn btn-default">
+                Select
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="point" type="button" class="btn btn-success">
+                Point
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="line" type="button" class="btn btn-success">
+                Line
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="polygon" type="button" class="btn btn-success">
+                Polygon
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="modify" type="button" class="btn btn-danger">
+                Modify
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="position" type="button" class="btn btn-danger">
+                My position
+              </button>
+            </li>
+            <li class="nav-item">
+              <button id="global" type="button" class="btn btn-danger">
+                Global view
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--déclaration de l'opbjet map-->
+    <div id="map">
+      <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+      </div>
+    </div>
+  
+  </body>
+
+  <!-- OpenLayers JS-->
+  <script src="resources/ol.js" type="text/javascript"></script>
+  <!-- Autres librairies JS-->
+  <script src="./resources/ol-layerswitcher.js"></script>
+  <!-- Notre code JavaScript-->
+  <script src="./js/osm_gs.js"></script>
+</html>
